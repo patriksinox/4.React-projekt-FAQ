@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
+import Otazka from "./Otazka";
+import otazkyData from "./data";
+import Footer from "./Footer";
+import Popis from "./Popis";
 
 function App() {
+  const [otazky, setOtazky] = useState(otazkyData);
+  console.log(otazky);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Popis />
+      <section>
+        <h2 className="text-center mt-5">Otázky a odpovede o prihlásení</h2>
+        <div className="otazky">
+          {otazky.map((otazka) => {
+            return <Otazka key={otazka.id} {...otazka} />;
+          })}
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 }
 

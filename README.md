@@ -5,8 +5,10 @@
  
  
  
- <h1>Môj tretí React projekt-FAQ</h1>
+ <h1>Môj štvrtý React projekt-FAQ</h1>
   <p><strong>React.JS</strong> a <strong>Bootstrap</strong> projekt. Projekt je podľa predlohy inštruktora <strong>Johna Smilgu</strong> z <strong>Udemy</strong>.
           Návrh projektu je jeho. Kód je môj 😊. V Projekte som použil
           Vanilla JS s Reactom - useState a React Ikony. 
         </p>
+
+https://4-react-project-faq.netlify.app/
